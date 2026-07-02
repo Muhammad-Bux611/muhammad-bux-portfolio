@@ -586,157 +586,132 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:32px 5%;
 <section id="projects">
   <div class="section-inner">
     <div class="section-tag">Projects</div>
-    <h2 class="section-title">Featured Projects</h2>
-    <p class="section-sub">
-      A selection of backend and full-stack applications built with Java, Spring Boot, Hibernate, MySQL, and modern development practices.
-    </p>
-
+    <h2 class="section-title">What I've Built</h2>
+    <p class="section-sub">Some repositories on GitHub — here are the highlights.</p>
     <div class="projects-grid">
 
-      <!-- ERP System -->
+      <div class="project-card security">
+        <div class="proj-header">
+          <div class="proj-icon green">🔐</div>
+          <a href="https://github.com/Muhammad-Bux611" class="proj-link" target="_blank">↗</a>
+        </div>
+        <div class="proj-name">JWT Authentication & Authorization System</div>
+        <div class="proj-desc">A secure login and registration system with JSON Web Token-based auth, role-based access control, and Spring Security integration. Includes token refresh and stateless session management.</div>
+        <div class="proj-tags">
+          <span class="proj-tag green">Spring Security</span>
+          <span class="proj-tag green">JWT</span>
+          <span class="proj-tag">Spring Boot</span>
+          <span class="proj-tag">MySQL</span>
+        </div>
+      </div>
+
       <div class="project-card featured">
         <div class="proj-header">
-          <div class="proj-icon amber">🏢</div>
-          <a href="https://github.com/Muhammad-Bux611/ERP" class="proj-link" target="_blank">↗</a>
+          <div class="proj-icon blue">📝</div>
+          <a href="https://github.com/Muhammad-Bux611" class="proj-link" target="_blank">↗</a>
         </div>
-
-        <div class="proj-name">Enterprise Resource Planning (ERP)</div>
-
-        <div class="proj-desc">
-          A modular enterprise application developed using Spring Boot featuring JWT authentication,
-          Spring Security, role-based authorization, audit logging, validation, REST APIs,
-          and layered architecture following enterprise development practices.
-        </div>
-
+        <div class="proj-name">Blog API with Role-Based Access Control</div>
+        <div class="proj-desc">Full RESTful blog API where admins can create/edit posts and readers can comment. Demonstrates role-based authorization, CRUD operations, and clean MVC layered architecture.</div>
         <div class="proj-tags">
-          <span class="proj-tag amber">Spring Boot</span>
-          <span class="proj-tag amber">Spring Security</span>
-          <span class="proj-tag">JWT</span>
-          <span class="proj-tag">Hibernate</span>
-          <span class="proj-tag">MySQL</span>
-        </div>
-      </div>
-
-      <!-- Jira Clone -->
-      <div class="project-card">
-        <div class="proj-header">
-          <div class="proj-icon blue">📋</div>
-          <a href="https://github.com/Muhammad-Bux611/JIRA" class="proj-link" target="_blank">↗</a>
-        </div>
-
-        <div class="proj-name">Jira Task Management System</div>
-
-        <div class="proj-desc">
-          A Jira-inspired project management application supporting authentication,
-          project management, issue tracking, role-based access, and RESTful APIs
-          built using Spring Boot and Hibernate.
-        </div>
-
-        <div class="proj-tags">
-          <span class="proj-tag blue">Spring Boot</span>
           <span class="proj-tag">REST API</span>
+          <span class="proj-tag">Spring Boot</span>
           <span class="proj-tag">Hibernate</span>
-          <span class="proj-tag">MySQL</span>
+          <span class="proj-tag">RBAC</span>
         </div>
       </div>
 
-      <!-- Online Bookstore -->
-      <div class="project-card">
+      <div class="project-card system">
         <div class="proj-header">
-          <div class="proj-icon cyan">📚</div>
-          <a href="https://github.com/Muhammad-Bux611/ONLINE-BOOKSTORE" class="proj-link" target="_blank">↗</a>
-        </div>
-
-        <div class="proj-name">Online Bookstore</div>
-
-        <div class="proj-desc">
-          Full-stack bookstore application with customer and admin modules,
-          authentication, book management, shopping cart, order processing,
-          and Hibernate ORM integration.
-        </div>
-
-        <div class="proj-tags">
-          <span class="proj-tag cyan">Java</span>
-          <span class="proj-tag">Hibernate</span>
-          <span class="proj-tag">Servlets</span>
-          <span class="proj-tag">JSP</span>
-          <span class="proj-tag">MySQL</span>
-        </div>
-      </div>
-
-      <!-- Student Management -->
-      <div class="project-card">
-        <div class="proj-header">
-          <div class="proj-icon green">🎓</div>
-          <a href="https://github.com/Muhammad-Bux611/STUDENT-MANAGEMENT-SYSTEM" class="proj-link" target="_blank">↗</a>
-        </div>
-
-        <div class="proj-name">Student Management System</div>
-
-        <div class="proj-desc">
-          Web-based student management system implementing CRUD operations,
-          course enrollment, Hibernate ORM, DAO pattern, Servlets, JSP,
-          and MySQL database integration.
-        </div>
-
-        <div class="proj-tags">
-          <span class="proj-tag green">Hibernate</span>
-          <span class="proj-tag">Servlet</span>
-          <span class="proj-tag">JSP</span>
-          <span class="proj-tag">DAO</span>
-          <span class="proj-tag">MySQL</span>
-        </div>
-      </div>
-
-      <!-- Employee Management -->
-      <div class="project-card other">
-        <div class="proj-header">
-          <div class="proj-icon indigo">👨‍💼</div>
-          <a href="https://github.com/Muhammad-Bux611/Employee-Management-System" class="proj-link" target="_blank">↗</a>
-        </div>
-
-        <div class="proj-name">Employee Management System</div>
-
-        <div class="proj-desc">
-          Backend REST API application implementing JWT authentication,
-          input validation, CRUD operations, exception handling,
-          and secure Spring Boot architecture.
-        </div>
-
-        <div class="proj-tags">
-          <span class="proj-tag indigo">Spring Boot</span>
-          <span class="proj-tag">JWT</span>
-          <span class="proj-tag">Validation</span>
-          <span class="proj-tag">REST API</span>
-        </div>
-      </div>
-
-      <!-- Online Examination -->
-      <div class="project-card other">
-        <div class="proj-header">
-          <div class="proj-icon amber">📝</div>
+          <div class="proj-icon amber">🎓</div>
           <a href="https://github.com/Muhammad-Bux611/ONLINE-EXAMINATION-SYSTEM" class="proj-link" target="_blank">↗</a>
         </div>
-
         <div class="proj-name">Online Examination System</div>
-
-        <div class="proj-desc">
-          A Java-based examination platform supporting online tests,
-          automatic grading, student records, result generation,
-          and database-driven management.
-        </div>
-
+        <div class="proj-desc">A web-based examination platform with timed tests, auto-grading, student management, and result reporting. Built with Java, Spring Boot, and MySQL for reliable data persistence.</div>
         <div class="proj-tags">
-          <span class="proj-tag amber">Java</span>
-          <span class="proj-tag">MySQL</span>
-          <span class="proj-tag">OOP</span>
+          <span class="proj-tag amber">Spring Boot</span>
+          <span class="proj-tag amber">MySQL</span>
+          <span class="proj-tag">Java</span>
           <span class="proj-tag">MVC</span>
         </div>
       </div>
 
+      <div class="project-card data">
+        <div class="proj-header">
+          <div class="proj-icon indigo">📦</div>
+          <a href="https://github.com/Muhammad-Bux611" class="proj-link" target="_blank">↗</a>
+        </div>
+        <div class="proj-name">Product Inventory Management System</div>
+        <div class="proj-desc">Backend system for managing product stock, categories, suppliers, and transactions. Features full CRUD operations, search/filter APIs, and database-level inventory tracking.</div>
+        <div class="proj-tags">
+          <span class="proj-tag indigo">Hibernate/JPA</span>
+          <span class="proj-tag indigo">Spring Boot</span>
+          <span class="proj-tag">MySQL</span>
+          <span class="proj-tag">CRUD</span>
+        </div>
+      </div>
+
+      <div class="project-card api">
+        <div class="proj-header">
+          <div class="proj-icon cyan">🏫</div>
+          <a href="https://github.com/Muhammad-Bux611" class="proj-link" target="_blank">↗</a>
+        </div>
+        <div class="proj-name">Student Management System</div>
+        <div class="proj-desc">Complete student records management with enrollment, grading, and course assignment. Demonstrates RESTful API design with proper HTTP methods and response handling.</div>
+        <div class="proj-tags">
+          <span class="proj-tag cyan">REST APIs</span>
+          <span class="proj-tag">Spring Boot</span>
+          <span class="proj-tag">MySQL</span>
+          <span class="proj-tag">Hibernate</span>
+        </div>
+      </div>
+
+      <div class="project-card other">
+        <div class="proj-header">
+          <div class="proj-icon amber">🏧</div>
+          <a href="https://github.com/Muhammad-Bux611/ATM-INTERFACE" class="proj-link" target="_blank">↗</a>
+        </div>
+        <div class="proj-name">ATM Interface</div>
+        <div class="proj-desc">A simulated ATM system implementing OOP principles — account management, balance inquiry, deposit/withdrawal, and PIN-based authentication using core Java.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">Core Java</span>
+          <span class="proj-tag">OOP</span>
+          <span class="proj-tag">Data Structures</span>
+        </div>
+      </div>
+
+      <div class="project-card other">
+        <div class="proj-header">
+          <div class="proj-icon blue">📚</div>
+          <a href="https://github.com/Muhammad-Bux611/DIGITAL-LIBRARY-MANAGEMENT" class="proj-link" target="_blank">↗</a>
+        </div>
+        <div class="proj-name">Digital Library Management</div>
+        <div class="proj-desc">A library system for managing books, members, and issue/return records. Implements search, filtering, and fine calculation logic with Java collections and file persistence.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">Java</span>
+          <span class="proj-tag">OOP</span>
+          <span class="proj-tag">Collections</span>
+        </div>
+      </div>
+
+      <div class="project-card other">
+        <div class="proj-header">
+          <div class="proj-icon cyan">📅</div>
+          <a href="https://github.com/Muhammad-Bux611/Attendance-Management-System" class="proj-link" target="_blank">↗</a>
+        </div>
+        <div class="proj-name">Attendance Management System</div>
+        <div class="proj-desc">Tracks student attendance records with date-based filtering and report generation. Clean backend logic with data validation and structured record keeping.</div>
+        <div class="proj-tags">
+          <span class="proj-tag cyan">Java</span>
+          <span class="proj-tag">File I/O</span>
+          <span class="proj-tag">OOP</span>
+        </div>
+      </div>
+
     </div>
+    
   </div>
 </section>
+
 <!-- EXPERIENCE -->
 <section id="experience" class="exp-bg">
   <div class="section-inner">
