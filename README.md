@@ -1,47 +1,144 @@
-# Contact form — local server and Formspree fallback
+# Muhammad Bux Portfolio
 
-This repository includes two ways to make the contact form on `portfolio.html` work:
+A modern personal portfolio website showcasing my projects, skills, and experience as a Java Backend Developer.
 
-- Run the included Node server (`/api/contact`) which sends email using SMTP (recommended if you want full control).
-- Use Formspree by setting the form `data-formspree` attribute to your Formspree endpoint (no server needed).
+## Features
 
-## Option A — Run the included Node server
+- Responsive portfolio website
+- About, Skills, Projects, and Contact sections
+- Smooth scrolling and modern UI
+- Contact form with two available options:
+  - Local Node.js backend (SMTP email)
+  - Formspree integration (no backend required)
 
-1. Install dependencies:
+---
+
+## Contact Form Setup
+
+The contact form supports two methods.
+
+### Option 1 — Node.js Server (Recommended)
+
+#### Install dependencies
 
 ```bash
 npm install
 ```
 
-2. Create a `.env` file in the repository root with these variables:
+#### Create a `.env` file
 
 ```env
 SMTP_HOST=smtp.example.com
 SMTP_PORT=587
-SMTP_SECURE=false # true if using SMTPS (465)
+SMTP_SECURE=false
 SMTP_USER=your-smtp-username
 SMTP_PASS=your-smtp-password
-TO_EMAIL=your@inbox.example.com
+TO_EMAIL=your@email.com
 PORT=3000
 ```
 
-3. Start the server:
+#### Start the server
 
 ```bash
 npm start
 ```
 
-4. Open `portfolio.html` in your browser (or host it). The form posts to `/api/contact` and the server will send the email.
+The form will submit to:
 
-## Option B — Use Formspree (no server)
+```
+/api/contact
+```
 
-1. Create a form endpoint at https://formspree.io and copy the endpoint ID (example: `https://formspree.io/f/abcdxyz`).
-2. In `portfolio.html` set the `data-formspree` attribute on the form to your endpoint (it is already present as a placeholder).
+and emails will be sent using your SMTP server.
 
-The page will attempt the local `/api/contact` endpoint first; if that fails and you provided a valid Formspree endpoint it will try Formspree automatically.
+---
 
-## Security notes
+### Option 2 — Formspree
 
-- Keep SMTP credentials secret. Do not commit `.env` to source control.
-- Consider rate-limiting, spam protection (reCAPTCHA), and server-side validation in production.
->>>>>>> 1e48a9e (initial commit)
+If you don't want to run a backend server:
+
+1. Create a Formspree account.
+2. Create a new form.
+3. Copy your endpoint.
+
+Example:
+
+```
+https://formspree.io/f/your-form-id
+```
+
+4. Replace the placeholder endpoint inside `portfolio.html`.
+
+The website will first try the local `/api/contact` endpoint. If it isn't available, it will automatically fall back to Formspree.
+
+---
+
+## Project Structure
+
+```
+portfolio/
+│
+├── portfolio.html
+├── style.css
+├── script.js
+├── package.json
+├── server.js
+├── api/
+├── assets/
+└── README.md
+```
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Muhammad-Bux611/Muhammad-Bux-Portfolio.git
+```
+
+Open the project:
+
+```bash
+cd Muhammad-Bux-Portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the application:
+
+```bash
+npm start
+```
+
+---
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Node.js
+- Express.js
+- Nodemailer
+- Formspree
+
+---
+
+## Security
+
+- Never commit your `.env` file.
+- Keep SMTP credentials private.
+- Consider enabling spam protection (reCAPTCHA) for production deployments.
+- Validate user input on both the client and server.
+
+---
+
+## License
+
+This project is for portfolio and educational purposes.
